@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from . import views
+from blog import views as blogviews
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^blog/$', blogviews.index), 
     url(r'^$', views.index),
     url(r'^about/$', views.about),
 ]
