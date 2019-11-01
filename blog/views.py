@@ -6,6 +6,14 @@ def index(request):
 	context = {
 	'judul' : 'Test Template Variable',
 	'kontributor' : 'saya',
+	'nav' : 	[
+			['/', 'Home'],
+			['/blog', 'Blog'],
+			['/about', 'About'],
+			['blog/cerita', 'Cerita']
+		],
+	'banner':'blog/img/images.jpeg',
+	'css_app':'blog/css/style.css',
 	}
 	return render(request,'blog/index.html', context)
 

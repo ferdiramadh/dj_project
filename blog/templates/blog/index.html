@@ -1,22 +1,27 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Test</title>
-	<style type="text/css">
-		h1{
-			color: salmon;
-			font-size: 30px;
-			font-weight: bold;
-		}
-	</style>
+<link rel="stylesheet" type="text/css" href="{% static css_app %}">
 </head>
 <body>
-	<h1>Ini Blog App Test</h1>
+	<h1 id="judul">Ini Blog App Test</h1>
 	<h2>ini belajar {{ judul }}</h2>
 	<h2>Dengan {{ kontributor }}</h2>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="recent/">Recent</a></li>
+		</ul>
+
 			<ul>
-		<li><a href="/">Home</a></li>
-		<li><a href="recent/">Recent</a></li>
-	</ul>
+			{# template tags#}
+			{% for link,name in nav%}
+			<li>
+				<a href="{{link}}" title="">{{name}}</a>
+			</li>
+			{% endfor %}
+		</ul>
+		<img src="{% static banner %}">
 </body>
 </html>

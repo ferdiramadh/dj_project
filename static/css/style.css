@@ -1,0 +1,25 @@
+#judul {
+	font-size: 30px;
+	color: red;
+}
+
+nav ul {
+	background-color: grey;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav li{
+	float: left;
+}
+nav a{
+	color : #fff;
+	display: block;
+	font-family: arial;
+	padding: 10px 10px;
+	text-decoration: none;
+}
+nav a:hover{
+	color: blue;
+}
