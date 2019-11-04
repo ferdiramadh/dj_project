@@ -10,7 +10,7 @@ def index(request):
 			['/', 'Home'],
 			['/blog', 'Blog'],
 			['/about', 'About'],
-			['blog/cerita', 'Cerita']
+			['/blog/cerita', 'Cerita']
 		],
 	'banner':'blog/img/images.jpeg',
 	'css_app':'blog/css/style.css',
